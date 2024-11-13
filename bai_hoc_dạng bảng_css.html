@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+#customers {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#customers td, #customers th {
+  border: 1px solid black ;
+  padding: 8px;
+}
+#customers tr:nth-child(even){background-color:white;}
+#customers tr:hover {background-color:aliceblue;}
+#customers th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color:green;
+  color:black;
+}
+</style>
+</head>
+<meta charset="UTF=8">
+<meta name="">
+<title>baitapvenhacuathang</title>
+<link rel="stylesheet" href="./css/mystyle.css">
+
+<h1>NỘI DUNG BÀI HỌC TRÊN CSS LẬP TRÌNH WER 13/11</h1>
+
+<table id="customers">
+  <tr>
+    <th> dạng bài được học  </th>
+    <th> các dạng </th>
+    <th>lý thuyết </th>
+    <th>ví dụ </th>
+  </tr>
+  <tr>
+    <td> tạo file CSS</td>
+    <td> </td>
+    <td> mở file CSS sau đó tạo thư mục với tên mystyle.css</td>
+    <td> </td>
+  </tr>
+  <tr>
+    <td> nhúng CSS vào HTML </td>
+    <td> </td>
+    <td> dùng lệnh link rel="stylesheet" href="./css/mystyle.css" </td>
+    <td> </td>
+  </tr>
+  <tr>
+    <td>các mô hình bài tập cơ bản với CSS </td>
+    <td><p>1-Tạo Background color/ Text color từ CSS</p>
+        <p>2-Chọn Font chữ và căn chỉnh Font chữ</p>
+        <p>3-Căn lề chủ đề, căn lề chữ(Margin)</p>
+        <p>4-Căn lề riêng lẻ, căn lề theo thuộc tính viết tắt</p>
+        <p>5-Tạo các kiểu đường viền (Boder-style)</p>
+        <p>6-Tạo khoảng trống xung quanh phần tử, bên trong bất kỳ đường viền nào (Padding)</p>
+        <p>7-Tạo khoảng trống theo các mặt riêng biệt</p>
+        <p>8-Tạo khoảng trống theo thuộc tính viết tắt</p>
+        <p>9-Thiết lập chiều cao, chiều rộng trong CSS (Height/Width)</p>
+        <p>10-Giá trị của chiều cao và chiều rộng</p> </td>
+    <td><p>1- nền Trong các chương này, bạn sẽ tìm hiểu về các thuộc tính nền CSS sau:
+        background-color
+        background-image
+        background-repeat
+        background-attachment
+        background-position
+        background(thuật ngữ viết tắt của tài sản)</p>
+        <p>2-Việc chọn đúng phông chữ có tác động rất lớn đến trải nghiệm của người đọc đối với một trang web.Phông chữ phù hợp có thể tạo nên bản sắc mạnh mẽ cho thương hiệu của bạn.Sử dụng phông chữ dễ đọc là rất quan trọng. Phông chữ làm tăng giá trị cho văn bản của bạn. Điều quan trọng nữa là chọn đúng màu sắc và kích thước chữ cho phông chữ. </p>
+        <p>3-lề:Thuộc tính CSS marginđược sử dụng để tạo khoảng trống xung quanh các thành phần, bên ngoài bất kỳ đường viền nào được xác định.Với CSS, bạn có toàn quyền kiểm soát lề. Có các thuộc tính để thiết lập lề cho mỗi bên của một phần tử (trên, phải, dưới và trái).</p>
+        <p>4-lề riêng lẻ: CSS có các thuộc tính để chỉ định lề cho mỗi bên của một phần tử: margin-top,margin-right,margin-bottom,margin-left
+            <p>Tất cả các thuộc tính lề có thể có các giá trị sau:</p>
+            tự động - trình duyệt tính toán biên độ,chiều dài - chỉ định lề theo px, pt, cm, v.v.,% - chỉ định một lề theo % chiều rộng của phần tử chứa,kế thừa - chỉ định rằng lề phải được kế thừa từ phần tử cha</p>
+        <p>5-kiểu viền: Thuộc tính này border-stylechỉ định loại đường viền nào sẽ hiển thị.
+            <p>Các giá trị sau đây được phép:<p> 
+         dotted- Xác định đường viền chấm bi.
+             dashed- Xác định đường viền đứt nét.
+             solid- Xác định đường viền liền.
+             double- Xác định đường viền kép.
+             groove- Xác định đường viền có rãnh 3D. Hiệu ứng phụ thuộc vào giá trị border-color.
+             ridge- Xác định đường viền có gờ 3D. Hiệu ứng phụ thuộc vào giá trị border-color.
+             inset- Xác định đường viền chèn 3D. Hiệu ứng phụ thuộc vào giá trị border-color.
+             outset- Xác định đường viền 3D. Hiệu ứng phụ thuộc vào giá trị border-color.
+             none- Không xác định đường viền.
+             hidden- Xác định đường viền ẩn.
+             Thuộc tính này border-stylecó thể có từ một đến bốn giá trị (cho đường viền trên, đường viền phải, đường viền dưới và đường viền trái).</p>
+        <p>9,10-Thiết lập chiều cao và rộng: </p>
+           <p> Thuộc tính heightvà width được sử dụng để thiết lập chiều cao và chiều rộng của một phần tử. Thuộc tính height và width không bao gồm padding, border hoặc margin. Nó thiết lập height/width của vùng bên trong padding, border và margin của phần tử.</p>
+           <p> Giá trị chiều cao và chiều rộng của CSS</p>
+           <p>Các thuộc tính heightvà widthcó thể có các giá trị sau:</p>  
+            <p>1-auto- Đây là mặc định. Trình duyệt tính toán chiều cao và chiều rộng</p>
+           <p>2- length- Xác định chiều cao/chiều rộng theo px, cm, v.v.</p>
+           <p>3- %- Xác định chiều cao/chiều rộng theo phần trăm của khối chứa</p>
+            <p>4-initial- Đặt chiều cao/chiều rộng thành giá trị mặc định</p>
+            <p>5-inherit- Chiều cao/chiều rộng sẽ được kế thừa từ giá trị cha của nó</p> </td> 
+    <td>
+        <p>1-body {background-color: lightblue;}</p>
+        <p>2- .p1 {font-family: "Times New Roman", Times, serif;}</p>
+        <p>3,4-p {
+            <p>margin-top: 100px;</p>
+            <p>margin-bottom: 100px;</p>
+            <p>margin-right: 150px;</p>
+            <p>margin-left: 80px;}</p>
+            </p>
+        <p>5-các kiểu đường viền
+            p.dotted {border-style: dotted;}
+            p.dashed {border-style: dashed;}
+            p.solid {border-style: solid;}
+            p.double {border-style: double;}
+            p.groove {border-style: groove;}
+            p.ridge {border-style: ridge;}
+            p.inset {border-style: inset;}
+            p.outset {border-style: outset;}
+            p.none {border-style: none;}
+            p.hidden {border-style: hidden;}
+            p.mix {border-style: dotted dashed solid double;}
+        </p> 
+        <p>9,10-chiều cao:
+            div {
+                height: 200px;
+                width: 50%;
+                background-color: powderblue;
+              }
+        </p>   
+    </td>           
+  </tr>
+  <tr>
+    <td>CSS Tables </td>
+    <td>Đường viền bảng</td>
+    <td>Để chỉ định đường viền bảng trong CSS, hãy sử dụng borderthuộc tính </td>
+    <td> table, th, td {
+        border: 1px solid;
+      } </td>
+  </tr>
+  <tr>
+    <td> </td>
+    <td> Bảng toàn chiều rộng </td>
+    <td> Bảng trên có thể có vẻ nhỏ trong một số trường hợp. Nếu bạn cần một bảng trải dài toàn bộ màn hình (toàn chiều rộng), hãy thêm width: 100%vào phần tử </td>
+    <td>table {
+        width: 100%;
+      } </td>    
+  </tr> 
+<tr>
+<td> </td>
+<td> thu gọn viền bảng </td>
+<td> Thuộc tính này border-collapsethiết lập xem đường viền bảng có nên được thu gọn thành một đường viền duy nhất hay không </td>
+<td> table {
+    border-collapse: collapse;
+  }</td>
+</tr>
+<tr> 
+    <td> CSS Box Model </td>
+    <td> Chiều rộng và chiều cao của một phần tử </td>
+    <td> Để thiết lập chiều rộng và chiều cao của một phần tử chính xác trong mọi trình duyệt, bạn cần biết mô hình hộp hoạt động như thế nào. </td>
+    <td> div {
+        width: 320px;
+        height: 50px;
+        padding: 10px;
+        border: 5px solid gray;
+        margin: 0;
+      } </td>
+</tr>
+<tr>
+    <td> </td>
+    <td> mô hình hộp </td>
+    <td>Trong CSS, thuật ngữ "mô hình hộp" được sử dụng khi nói về thiết kế và bố cục.
+
+        Mô hình hộp CSS về cơ bản là một hộp bao quanh mọi phần tử HTML. Nó bao gồm: nội dung, phần đệm, đường viền và lề. Hình ảnh bên dưới minh họa mô hình hộp: 
+        <p>Nội dung - Nội dung của hộp, nơi văn bản và hình ảnh xuất hiện</p>
+        <p>Đệm - Xóa một vùng xung quanh nội dung. Đệm trong suốt</p>
+        <p>Đường viền - Đường viền bao quanh phần đệm và nội dung</p>
+        <p> Lề - Xóa một vùng bên ngoài đường viền. Lề trong suốt</p></td>
+    <td> div {
+        width: 300px;
+        border: 15px solid green;
+        padding: 50px;
+        margin: 20px;
+      } </td>    
+</tr>
+<tr>
+    <td> CSS Selectors </td>
+    <td> Bộ chọn CSS </td>
+    <td> Bộ chọn CSS được sử dụng để "tìm" (hoặc chọn) các phần tử HTML mà bạn muốn định dạng.
+
+        Chúng ta có thể chia bộ chọn CSS thành năm loại:
+        
+        <p>Bộ chọn đơn giản (chọn các phần tử dựa trên tên, id, lớp)</p>
+        <p>Bộ chọn kết hợp (chọn các phần tử dựa trên mối quan hệ cụ thể giữa chúng)</p>
+        <p>Bộ chọn lớp giả (chọn các phần tử dựa trên trạng thái nhất định)</p>
+        <p>Bộ chọn phần tử giả (chọn và định dạng một phần của phần tử)</p>
+        <p>Bộ chọn thuộc tính (chọn các phần tử dựa trên thuộc tính hoặc giá trị thuộc tính)</p>
+        <p>Trang này sẽ giải thích các bộ chọn CSS cơ bản nhất</p> </td>   
+</tr>
+<tr>
+    <td> </td>
+    <td> Bộ chọn phần tử CSS </td>
+    <td> Bộ chọn phần tử sẽ chọn các phần tử HTML dựa trên tên phần tử. </td>
+    <td> p {
+        text-align: center;
+        color: red;
+      } </td>
+</tr>
+<tr> 
+    <td> </td>
+    <td> Bộ chọn id CSS </td>
+    <td> <p>Bộ chọn id sử dụng thuộc tính id của phần tử HTML để chọn một phần tử cụ thể.
+Id của một phần tử là duy nhất trong một trang, do đó bộ chọn id được sử dụng để chọn một phần tử duy nhất!
+Để chọn một phần tử có id cụ thể, hãy viết ký tự thăng (#), theo sau là id của phần tử đó.</p>
+     <p> * Nguyên tắc: "id" luôn luôn phải là duy nhất
+        - Trước một phần tử phải có "#"
+        - Gán phần tử có "#" vào "id" để thay đổi một nội dung cần thay đổi
+        VD: #para1{"Các lệnh thay đổi cho nội dung"}
+        p id="para1" hello  </p>   
+    <td> #para1 {
+        text-align: center;
+        color: red;
+      } </td>
+</tr>
+<tr> 
+    <td> </td>
+    <td> Bộ chọn class CSS</td>
+    <td><p> Bộ chọn lớp sẽ chọn các phần tử HTML có thuộc tính lớp cụ thể.Để chọn các phần tử có lớp cụ thể, hãy viết ký tự dấu chấm (.), theo sau là tên lớp.</p>
+        <p>* Nguyên tắc: Class thì được phép trùng nhau khi sử dụng trong HTML còn "id" thì không
+        - Trước một phần tử khi sử dụng "Class" thì phải có dấu "." trước một phần tử
+        - Gán phần tử có "." vào "Class"
+        VD: ( .red-text{//Lệnh thay đổi} )
+        '<'p class="red-text" '>' Hello '<'/p'>'</p>     
+    </td>
+    <td> .center {
+        text-align: center;
+        color: red;
+      } </td>
+</tr>
+
+</table>
+</body>
+</html>
